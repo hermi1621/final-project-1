@@ -1,12 +1,11 @@
 alert("DONE");
 
-// Language translations
 const translations = { en: {}, am: {} };
 let currentLanguage = "en";
 let mediaRecorder;
 let recordedChunks = [];
 
-// Language Toggle
+
 function toggleLanguage(lang) {
   currentLanguage = lang;
   document.querySelectorAll(".lang-btn").forEach((btn) => btn.classList.remove("active"));
@@ -47,7 +46,7 @@ function updatePlaceholders(lang) {
   });
 }
 
-// Modal Functions
+
 function openModal(modalId) {
   document.getElementById(modalId).style.display = "block";
   document.body.style.overflow = "hidden";
@@ -69,7 +68,7 @@ window.onclick = (event) => {
   }
 };
 
-// Video Recording Functions
+
 async function startVideoRecording() {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
@@ -162,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ---------------- POSTS WITH LOCALSTORAGE ----------------
+  // POSTS WITH LOCALSTORAGE
   const postForm = document.getElementById("textPostForm");
   const postInput = document.getElementById("postInput");
   const postFile = document.getElementById("postFile");
@@ -296,3 +295,4 @@ if (postForm) {
   
   loadPosts();
 });
+
