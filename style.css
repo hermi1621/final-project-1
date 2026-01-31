@@ -20,7 +20,7 @@ html{
   scroll-behavior: smooth;
 }
 
-/* Language Toggle */
+
 .language-toggle {
   position: fixed;
   top: 20px;
@@ -52,7 +52,7 @@ html{
   box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
 }
 
-/* Header */
+
 .header {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -925,3 +925,4 @@ h1 {
     font-size: 1rem;
   }
 }
+
