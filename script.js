@@ -1,4 +1,4 @@
-alert("DONE");
+
 
 const translations = { en: {}, am: {} };
 let currentLanguage = "en";
@@ -295,4 +295,5 @@ if (postForm) {
   
   loadPosts();
 });
+
 
