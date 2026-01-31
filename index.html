@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moms Connect - የእናቶች ግንኙነት</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<link rel="stylesheet " href="style.css">
+
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button onclick="toggleLanguage('en')" class="lang-btn active" id="en-btn">English</button>
+        <button onclick="toggleLanguage('am')" class="lang-btn" id="am-btn">አማርኛ</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-heart"></i>
+                <span data-en="Moms Connect" data-am="የእናቶች ግንኙነት">Moms Connect</span>
+
+
+            </div>
+            <div class="nav-menu">
+                <a href="#features" data-en="Features" data-am="ባህሪያት">Features</a>
+                <a href="#community" data-en="Community" data-am="ማህበረሰብ">Community</a>
+                <a href="contactus.html" data-en="contact us" data-am="አግኙን">Contact Us</a>
+                <a href="#safety" data-en="Safety" data-am="ደህንነት">Safety</a>
+                <button class="btn-secondary" onclick="openModal('loginModal')" data-en="Sign In" data-am="ግባ">Sign
+                    In</button>
+                <button class="btn-primary" onclick="openModal('signupModal')" data-en="Join Now"
+                    data-am="አሁን ተቀላቀል">Join Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span data-en="Women-Only Safe Space" data-am="ለሴቶች ብቻ ደህንነቱ የተጠበቀ ቦታ">Women-Only Safe Space</span>
+                </div>
+                <h1>
+                    <span data-en="Share Your Motherhood Journey" data-am="የእናትነት ጉዞዎን ያካፍሉ">Share Your Motherhood
+                        Journey</span>
+                    <span class="gradient-text" data-en="Through Videos & Stories" data-am="በቪዲዮ እና ታሪኮች">Through Videos
+                        & Stories</span>
+                </h1>
+                <p data-en="Connect with nearby moms through video stories, photos, and real-time chat. Get mentorship from senior moms or guide junior moms on their journey."
+                    data-am="በቪዲዮ ታሪኮች፣ ፎቶዎች እና በቅጽበት ውይይት ከአቅራቢያዎ ካሉ እናቶች ጋር ይገናኙ። ከአዋቂ እናቶች መምሪያ ያግኙ ወይም ወጣት እናቶችን በጉዞአቸው ይመሩ።">
+                    Connect with nearby moms through video stories, photos, and real-time chat. Get mentorship from
+                    senior moms or guide junior moms on their journey.
+                </p>
+
+
+
+
+                </form>
+
+
+
+                <!--  Post Display Section -->
+                <div id="postsContainer" style="margin-top: 20px;">
+                </div>
+
+                <!-- Mom Types -->
+                <div class="mom-types">
+                    <div class="mom-type junior">
+                        <i class="fas fa-baby"></i>
+                        <div>
+                            <h3 data-en="Junior Moms" data-am="ወጣት እናቶች">Junior Moms</h3>
+                            <p data-en="New to motherhood? Get support & guidance"
+                                data-am="እናትነት አዲስ ነው? ድጋፍ እና መመሪያ ያግኙ">New to motherhood? Get support & guidance</p>
+                        </div>
+                    </div>
+                    <div class="mom-type senior">
+                        <i class="fas fa-crown"></i>
+                        <div>
+                            <h3 data-en="Senior Moms" data-am="አዋቂ እናቶች">Senior Moms</h3>
+                            <p data-en="Experienced? Share wisdom & mentor others"
+                                data-am="ልምድ አለዎት? ጥበብ ያካፍሉ እና ሌሎችን ይመሩ">Experienced? Share wisdom & mentor others</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary large" onclick="openModal('signupModal')">
+                        <span data-en="Start Sharing Your Story" data-am="ታሪክዎን ማካፈል ይጀምሩ">Start Sharing Your
+                            Story</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-user-check"></i>
+                        <span data-en="Video Verified Women Only" data-am="በቪዲዮ የተረጋገጡ ሴቶች ብቻ">Video Verified Women
+                            Only</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="Location-Based Matching" data-am="በአካባቢ ላይ የተመሰረተ ማዛመድ">Location-Based
+                            Matching</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span data-en="Safe & Private" data-am="ደህንነቱ የተጠበቀ እና ግላዊ">Safe & Private</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" data-en="Features" data-am="ባህሪያት">Features</div>
+                <h2 data-en="Everything You Need to Connect" data-am="ለመገናኘት የሚያስፈልግዎት ሁሉም ነገር">Everything You Need to
+                    Connect</h2>
+                <p data-en="From video verification to expert support, we've got all the tools to help you build lasting friendships."
+                    data-am="ከቪዲዮ ማረጋገጫ እስከ ባለሙያ ድጋፍ፣ ዘላቂ ወዳጅነት እንዲገነቡ የሚረዱዎት ሁሉም መሳሪያዎች አሉን።">
+                    From video verification to expert support, we've got all the tools to help you build lasting
+                    friendships.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 data-en="Video Verification" data-am="የቪዲዮ ማረጋገጫ">Video Verification</h3>
+                    <p data-en="Record a short video during signup to confirm your identity and ensure a safe community."
+                        data-am="በምዝገባ ወቅት ማንነትዎን ለማረጋገጥ እና ደህንነቱ የተጠበቀ ማህበረሰብ ለማረጋገጥ አጭር ቪዲዮ ይቅረጹ።">
+                        Record a short video during signup to confirm your identity and ensure a safe community.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 data-en="Community Sharing" data-am="የማህበረሰብ ማካፈል">Community Sharing</h3>
+                    <p data-en="Post photos, videos, and stories while connecting with other moms in your location."
+                        data-am="በአካባቢዎ ካሉ ሌሎች እናቶች ጋር እየተገናኙ ፎቶዎችን፣ ቪዲዮዎችን እና ታሪኮችን ይለጥፉ።">
+                        Post photos, videos, and stories while connecting with other moms in your location.
+                    </p>
+                </div>
+
+
+
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 data-en="Location-Based" data-am="በአካባቢ ላይ የተመሰረተ">Location-Based</h3>
+                <p data-en="Connect with moms in your area for local support and real-world meetups."
+                    data-am="ለአካባቢያዊ ድጋፍ እና በእውነተኛው ዓለም ስብሰባዎች በአካባቢዎ ካሉ እናቶች ጋር ይገናኙ።">
+                    Connect with moms in your area for local support and real-world meetups.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 data-en="Interactive Comments" data-am="በይነተገናኝ አስተያየቶች">Interactive Comments</h3>
+                <p data-en="Comment on photos and videos, engage with the community, and build connections."
+                    data-am="በፎቶዎች እና ቪዲዮዎች ላይ አስተያየት ይስጡ፣ ከማህበረሰቡ ጋር ይሳተፉ እና ግንኙነቶችን ይገንቡ።">
+                    Comment on photos and videos, engage with the community, and build connections.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 data-en="Privacy First" data-am="ግላዊነት በመጀመሪያ">Privacy First</h3>
+                <p data-en="Only provide your age, email, location, and name. Your privacy is protected."
+                    data-am="እድሜዎን፣ ኢሜልዎን፣ አካባቢዎን እና ስምዎን ብቻ ያቅርቡ። ግላዊነትዎ የተጠበቀ ነው።">
+                    Only provide your age, email, location, and name. Your privacy is protected.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Safety Section -->
+    <section id="safety" class="safety">
+        <div class="container">
+            <div class="safety-content">
+                <div class="safety-text">
+                    <div class="section-badge" data-en="Safety & Privacy" data-am="ደህንነት እና ግላዊነት">Safety & Privacy
+                    </div>
+                    <h2 data-en="Your Safety is Our Priority" data-am="ደህንነትዎ የእኛ ቅድሚያ ነው">Your Safety is Our Priority
+                    </h2>
+                    <p data-en="We've built comprehensive safety measures to ensure Moms Connect remains a trusted, secure space for women."
+                        data-am="የእናቶች ግንኙነት ለሴቶች የታመነ እና ደህንነቱ የተጠበቀ ቦታ እንዲሆን ሁሉን አቀፍ የደህንነት እርምጃዎችን ገንብተናል።">
+                        We've built comprehensive safety measures to ensure Moms Connect remains a trusted, secure space
+                        for women.
+                    </p>
+
+                    <div class="safety-features">
+                        <div class="safety-item">
+                            <i class="fas fa-video"></i>
+                            <div>
+                                <h4 data-en="Video Verification" data-am="የቪዲዮ ማረጋገጫ">Video Verification</h4>
+                                <p data-en="All members record a verification video during signup"
+                                    data-am="ሁሉም አባላት በምዝገባ ወቅት የማረጋገጫ ቪዲዮ ይቀርጻሉ">All members record a verification
+                                    video during signup</p>
+                            </div>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4 data-en="Minimal Data Collection" data-am="አነስተኛ የመረጃ ሰብሰባ">Minimal Data Collection
+                                </h4>
+                                <p data-en="Only age, email, location, and name required"
+                                    data-am="እድሜ፣ ኢሜል፣ አካባቢ እና ስም ብቻ ያስፈልጋል">Only age, email, location, and name
+                                    required</p>
+                            </div>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-user-shield"></i>
+                            <div>
+                                <h4 data-en="Women-Only Platform" data-am="ለሴቶች ብቻ መድረክ">Women-Only Platform</h4>
+                                <p data-en="Verified female-only community with strict moderation"
+                                    data-am="ጥብቅ ቁጥጥር ያለው የተረጋገጠ ሴቶች ብቻ ማህበረሰብ">Verified female-only community with
+                                    strict moderation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="community" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to Join Our Community?" data-am="ማህበረሰባችንን ለመቀላቀል ዝግጁ ነዎት?">Ready to Join Our
+                    Community?</h2>
+                <p data-en="Join thousands of verified moms sharing experiences and building meaningful connections."
+                    data-am="ልምዶችን የሚያካፍሉ እና ትርጉም ያላቸውን ግንኙነቶች የሚገነቡ በሺዎች የሚቆጠሩ የተረጋገጡ እናቶችን ይቀላቀሉ።">
+                    Join thousands of verified moms sharing experiences and building meaningful connections.
+                </p>
+                <button class="btn-primary large" onclick="openModal('signupModal')">
+                    <span data-en="Get Started Today" data-am="ዛሬ ይጀምሩ">Get Started Today</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-en="Join Moms Connect" data-am="የእናቶች ግንኙነትን ይቀላቀሉ">Join Moms Connect</h2>
+                <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            </div>
+            <form id="signupForm" class="signup-form">
+                <div class="form-group">
+                    <label data-en="Full Name" data-am="ሙሉ ስም">Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Email" data-am="ኢሜል">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Age" data-am="እድሜ">Age</label>
+                    <input type="number" id="age" min="18" max="80" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Location" data-am="አካባቢ">Location</label>
+                    <input type="text" id="location" required>
+                    <select id="location" required>
+                        <option value="" disabled selected>Select your subcity</option>
+                        <option value="bole">Bole</option>
+                        <option value="gulele">Gulele</option>
+                        <option value="kirkos">Kirkos</option>
+                        <option value="lideta">Lideta</option>
+                        <option value="nifas silk-lafto">Nifas Silk-Lafto</option>
+                        <option value="kolfe keranio">Kolfe Keranio</option>
+                        <option value="yeka">Yeka</option>
+                        <option value="akaki kality">Akaki Kality</option>
+                        <option value="addis ketema">Addis Ketema</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-en="Mom Type" data-am="የእናት አይነት">Mom Type</label>
+                    <select id="momType" required>
+                        <option value="" data-en="Select..." data-am="ይምረጡ...">Select...</option>
+                        <option value="junior" data-en="Junior Mom (New to motherhood)" data-am="ወጣት እናት (እናትነት አዲስ)">
+                            Junior Mom (New to motherhood)</option>
+                        <option value="senior" data-en="Senior Mom (Experienced)" data-am="አዋቂ እናት (ልምድ ያለው)">Senior Mom
+                            (Experienced)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-am="የይለፍ ቃል">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="video-verification">
+                    <h3 data-en="Video Verification Required" data-am="የቪዲዮ ማረጋገጫ ያስፈልጋል">Video Verification Required
+                    </h3>
+                    <p data-en="Please record a short video to verify your identity"
+                        data-am="እባክዎ ማንነትዎን ለማረጋገጥ አጭር ቪዲዮ ይቅረጹ">Please record a short video to verify your identity
+                    </p>
+                    <video id="videoPreview" width="300" height="200" style="display:none;"></video>
+                    <button type="button" id="startRecording" class="btn-secondary">
+                        <i class="fas fa-video"></i>
+                        <span data-en="Start Recording" data-am="ቀረጻ ይጀምሩ">Start Recording</span>
+                    </button>
+                    <button type="button" id="stopRecording" class="btn-danger" style="display:none;">
+                        <i class="fas fa-stop"></i>
+                        <span data-en="Stop Recording" data-am="ቀረጻ ያቁሙ">Stop Recording</span>
+                    </button>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                    <span data-en="Create Account" data-am="መለያ ይፍጠሩ">Create Account</span>
+                </button>
+
+                <button type="submit">submit</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-en="Welcome Back" data-am="እንኳን ደህና መጡ">Welcome Back</h2>
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label data-en="Email" data-am="ኢሜል">Email</label>
+                    <input type="email" id="loginEmail" required name="email"
+                        pattern="[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}"
+                        title="Only letters, numbers, and dots allowed. No underscores.">
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-am="የይለፍ ቃል">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                    <span data-en="Sign In" data-am="ግባ">Sign In</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
